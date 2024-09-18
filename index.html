@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Exemplo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 600px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .column {
+            flex: 1;
+            margin: 10px;
+        }
+        .column2 {
+            flex: 1;
+            margin: 10px;
+            padding-left: 30px;
+            padding-top: 27px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            align-self: flex-end;
+            margin-top: 20px;
+            width: auto;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <div class="column">
+        <h2>Informações Comuns</h2>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="password" placeholder="Senha" required>
+        <input type="tel" placeholder="Telefone" required>
+        <input type="url" placeholder="Website">
+        <input type="text" placeholder="Endereço">
+        <input type="date" placeholder="Data de Nascimento">
+        <input type="number" placeholder="Idade">
+        <input type="color" placeholder="Cor Favorita">
+        <textarea placeholder="Mensagem" rows="4"></textarea>
+    </div>
+     
+    <div class="column2">
+        <h2>Campos HTML5</h2>
+        <input type="search" placeholder="Busca">
+        <input type="datetime-local" placeholder="Data e Hora">
+        <input type="month" placeholder="Mês">
+        <input type="week" placeholder="Semana">
+        <input type="time" placeholder="Hora">
+        <input type="range" min="1" max="100" placeholder="Intervalo">
+        <input type="file" accept="image/*">
+        <input type="email" placeholder="E-mail Alternativo">
+        <select>
+            <option value="">Selecione uma Opção</option>
+            <option value="opcao1">Opção 1</option>
+            <option value="opcao2">Opção 2</option>
+        </select>
+        <input type="checkbox" id="termos" required>
+        <label for="termos">Aceito os Termos e Condições</label>
+    </div>
+
+    <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
